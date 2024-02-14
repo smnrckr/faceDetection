@@ -18,7 +18,7 @@ public class WebFaceDetection {
     public static void main(String[] args) {
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
         CascadeClassifier faceCascade = new CascadeClassifier();
-        faceCascade.load("C:/Users/sema_/Downloads/opencv/build/etc/haarcascades/haarcascade_frontalface_default.xml"); // tespit için eğit
+        faceCascade.load("haarcascade_frontalface_default.xml"); // tespit için eğit
         int cameraIndex=0;
         VideoCapture capture = new VideoCapture(cameraIndex);
         
